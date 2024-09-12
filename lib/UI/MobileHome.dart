@@ -8,6 +8,8 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import '../Widget/MobileWorkBox.dart';
 
 class MobileHome extends StatefulWidget {
+  const MobileHome({super.key});
+
   @override
   _MobileHomeState createState() => _MobileHomeState();
 }
@@ -18,7 +20,7 @@ class _MobileHomeState extends State<MobileHome> {
       children: [
         Icon(
           Icons.skip_next,
-          color: Color(0xff64FFDA).withOpacity(0.6),
+          color: const Color(0xff64FFDA).withOpacity(0.6),
           size: 14.0,
         ),
         SizedBox(
@@ -48,7 +50,7 @@ class _MobileHomeState extends State<MobileHome> {
 
   Widget _mobileMenu(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff64FFDA),
+      backgroundColor: const Color(0xff64FFDA),
       body: InkWell(
         onTap: () => Navigator.of(context).pop(),
         child: SizedBox(
@@ -65,7 +67,7 @@ class _MobileHomeState extends State<MobileHome> {
                   text: 'About',
                   textsize: 20,
                   fontWeight: FontWeight.bold,
-                  color: Color(0xff0A192F),
+                  color: const Color(0xff0A192F),
                 ),
               ),
               const SizedBox(height: 20),
@@ -78,7 +80,7 @@ class _MobileHomeState extends State<MobileHome> {
                   text: 'Experience',
                   fontWeight: FontWeight.bold,
                   textsize: 20,
-                  color: Color(0xff0A192F),
+                  color: const Color(0xff0A192F),
                 ),
               ),
               const SizedBox(height: 20),
@@ -91,7 +93,7 @@ class _MobileHomeState extends State<MobileHome> {
                   text: 'Contact Me',
                   fontWeight: FontWeight.bold,
                   textsize: 20,
-                  color: Color(0xff0A192F),
+                  color: const Color(0xff0A192F),
                 ),
               ),
               const SizedBox(height: 20),
@@ -104,7 +106,7 @@ class _MobileHomeState extends State<MobileHome> {
                   text: 'Resume',
                   fontWeight: FontWeight.bold,
                   textsize: 20,
-                  color: Color(0xff0A192F),
+                  color: const Color(0xff0A192F),
                 ),
               ),
             ],
@@ -119,7 +121,7 @@ class _MobileHomeState extends State<MobileHome> {
     Method method = Method();
     final Size size = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: Color(0xff0A192F),
+      backgroundColor: const Color(0xff0A192F),
       // endDrawer: Drawer(
       //     elevation: 6.0,
       //     child: Column(
@@ -162,14 +164,14 @@ class _MobileHomeState extends State<MobileHome> {
             ),
           )
         ],
-        backgroundColor: Color(0xff0A192F),
+        backgroundColor: const Color(0xff0A192F),
         elevation: 0.0,
         title: Padding(
           padding: const EdgeInsets.all(8.0),
           child: CustomText(
             text: "PT",
             textsize: 20.0,
-            color: Color(0xff41FBDA),
+            color: const Color(0xff41FBDA),
             letterSpacing: 3.0,
             fontWeight: FontWeight.bold,
           ),
@@ -186,7 +188,7 @@ class _MobileHomeState extends State<MobileHome> {
             CustomText(
               text: "Hi, my name is",
               textsize: 16.0,
-              color: Color(0xff41FBDA),
+              color: const Color(0xff41FBDA),
               letterSpacing: 3.0,
             ),
             SizedBox(
@@ -195,7 +197,7 @@ class _MobileHomeState extends State<MobileHome> {
             CustomText(
               text: "Prince Thakur.",
               textsize: 52.0,
-              color: Color(0xffCCD6F6),
+              color: const Color(0xffCCD6F6),
               fontWeight: FontWeight.w900,
             ),
             SizedBox(
@@ -204,14 +206,14 @@ class _MobileHomeState extends State<MobileHome> {
             CustomTypeWriterText(
               text: "I design and develop apps with Flutter.",
               textsize: 42.0,
-              color: Color(0xffCCD6F6).withOpacity(0.6),
+              color: const Color(0xffCCD6F6).withOpacity(0.6),
               fontWeight: FontWeight.w700,
             ),
             SizedBox(
               height: size.height * 0.04,
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 8.0),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 8.0),
               child: Wrap(
                 children: [
                   Text(
@@ -233,22 +235,22 @@ class _MobileHomeState extends State<MobileHome> {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(4.0),
               ),
-              color: Color(0xff64FFDA),
+              color: const Color(0xff64FFDA),
               child: Container(
                 alignment: Alignment.center,
-                margin: EdgeInsets.all(0.75),
+                margin: const EdgeInsets.all(0.75),
                 height: 56.0,
                 width: 160.0,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(4.0),
-                  color: Color(0xff0A192F),
+                  color: const Color(0xff0A192F),
                 ),
                 child: MaterialButton(
                   onPressed: () {
                     method.launchEmail();
                   },
                   hoverColor: Colors.green,
-                  child: Text(
+                  child: const Text(
                     "Get In Touch",
                     style: TextStyle(
                       color: Color(0xff64FFDA),
@@ -267,7 +269,7 @@ class _MobileHomeState extends State<MobileHome> {
             //About me
             FittedBox(
               fit: BoxFit.cover,
-              child: Container(
+              child: SizedBox(
                 width: size.width,
                 //color: Colors.purple,
                 child: Column(
@@ -279,16 +281,16 @@ class _MobileHomeState extends State<MobileHome> {
                         CustomText(
                           text: "01.",
                           textsize: 20.0,
-                          color: Color(0xff61F9D5),
+                          color: const Color(0xff61F9D5),
                           fontWeight: FontWeight.w700,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 12.0,
                         ),
                         CustomText(
                           text: "About Me",
                           textsize: 26.0,
-                          color: Color(0xffCCD6F6),
+                          color: const Color(0xffCCD6F6),
                           fontWeight: FontWeight.w700,
                         ),
                         SizedBox(
@@ -297,7 +299,7 @@ class _MobileHomeState extends State<MobileHome> {
                         Container(
                           width: size.width / 4,
                           height: 1.10,
-                          color: Color(0xff303C55),
+                          color: const Color(0xff303C55),
                         ),
                       ],
                     ),
@@ -313,14 +315,14 @@ class _MobileHomeState extends State<MobileHome> {
                           text:
                               "Hello! I'm Prince, a Flutter Developer based in United States, .\nI enjoy creating things that solve real-world problems, may it be using applications, websites, or anything in between. My goal is to build solutions by leveraging the power of cross-platform development.\n",
                           textsize: 16.0,
-                          color: Color(0xff828DAA),
+                          color: const Color(0xff828DAA),
                           fontWeight: FontWeight.w500,
                           letterSpacing: 0.75,
                         ),
                         CustomText(
                           text: "Here are a few technologies I've been working with recently:\n\n",
                           textsize: 16.0,
-                          color: Color(0xff828DAA),
+                          color: const Color(0xff828DAA),
                           fontWeight: FontWeight.w500,
                           letterSpacing: 0.75,
                         ),
@@ -369,7 +371,7 @@ class _MobileHomeState extends State<MobileHome> {
 
             //Image
             Center(
-              child: Container(
+              child: SizedBox(
                 height: size.height * 0.6,
                 width: size.width * 0.7,
                 child: Stack(
@@ -379,19 +381,19 @@ class _MobileHomeState extends State<MobileHome> {
                       right: 20,
                       left: 50.0,
                       child: Card(
-                        color: Color(0xff61F9D5),
+                        color: const Color(0xff61F9D5),
                         child: Container(
-                          margin: EdgeInsets.all(2.75),
+                          margin: const EdgeInsets.all(2.75),
                           height: size.height * 0.45,
                           width: size.width * 0.66,
-                          color: Color(0xff0A192F),
+                          color: const Color(0xff0A192F),
                         ),
                       ),
                     ),
-                    Container(
+                    SizedBox(
                       height: size.height * 0.5,
                       width: size.width * 0.6,
-                      child: Image(
+                      child: const Image(
                         fit: BoxFit.cover,
                         image: AssetImage("images/pic1.jpg"),
                       ),
@@ -412,16 +414,16 @@ class _MobileHomeState extends State<MobileHome> {
                 CustomText(
                   text: "02.",
                   textsize: 20.0,
-                  color: Color(0xff61F9D5),
+                  color: const Color(0xff61F9D5),
                   fontWeight: FontWeight.w700,
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 12.0,
                 ),
                 CustomText(
                   text: "Where I've Worked",
                   textsize: 26.0,
-                  color: Color(0xffCCD6F6),
+                  color: const Color(0xffCCD6F6),
                   fontWeight: FontWeight.w700,
                 ),
                 SizedBox(
@@ -430,12 +432,12 @@ class _MobileHomeState extends State<MobileHome> {
                 Container(
                   width: size.width * 0.08,
                   height: 1.10,
-                  color: Color(0xff303C55),
+                  color: const Color(0xff303C55),
                 ),
               ],
             ),
 
-            MobileWork(),
+            const MobileWork(),
 
             SizedBox(
               height: size.height * 0.07,
@@ -453,10 +455,10 @@ class _MobileHomeState extends State<MobileHome> {
                     CustomText(
                       text: "03. What's Next?",
                       textsize: 16.0,
-                      color: Color(0xff41FBDA),
+                      color: const Color(0xff41FBDA),
                       letterSpacing: 3.0,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 16.0,
                     ),
                     CustomText(
@@ -492,17 +494,17 @@ class _MobileHomeState extends State<MobileHome> {
                       },
                       child: Card(
                         elevation: 4.0,
-                        color: Color(0xff64FFDA),
+                        color: const Color(0xff64FFDA),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(6.0),
                         ),
                         child: Container(
-                          margin: EdgeInsets.all(0.85),
+                          margin: const EdgeInsets.all(0.85),
                           height: size.height * 0.10,
                           width: size.width * 0.30,
                           alignment: Alignment.center,
                           decoration: BoxDecoration(
-                            color: Color(0xff0A192F),
+                            color: const Color(0xff0A192F),
                             borderRadius: BorderRadius.circular(6.0),
                           ),
                           child: const Padding(

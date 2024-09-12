@@ -38,10 +38,10 @@ dependencies:
   flutter_page_transition:
     git:
       url: https://github.com/AbhishekDoshi26/flutter_page_transition.git
-  font_awesome_flutter: any
-  scroll_to_index: null
-  url_launcher: any
-  url_strategy: any
+  font_awesome_flutter: ^10.7.0
+  scroll_to_index: ^3.0.1
+  url_launcher: ^6.3.0
+  url_strategy: ^0.3.0
   typewritertext: ^3.0.8
 
 

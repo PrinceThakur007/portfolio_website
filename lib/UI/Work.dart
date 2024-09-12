@@ -5,6 +5,8 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 
 class Work extends StatefulWidget {
+  const Work({super.key});
+
   @override
   _WorkState createState() => _WorkState();
 }
@@ -26,16 +28,16 @@ class _WorkState extends State<Work> {
               CustomText(
                 text: "02.",
                 textsize: 20.0,
-                color: Color(0xff61F9D5),
+                color: const Color(0xff61F9D5),
                 fontWeight: FontWeight.w700,
               ),
-              SizedBox(
+              const SizedBox(
                 width: 12.0,
               ),
               CustomText(
                 text: "Where I've Worked",
                 textsize: 26.0,
-                color: Color(0xffCCD6F6),
+                color: const Color(0xffCCD6F6),
                 fontWeight: FontWeight.w700,
               ),
               SizedBox(
@@ -44,7 +46,7 @@ class _WorkState extends State<Work> {
               Container(
                 width: size.width / 4,
                 height: 1.10,
-                color: Color(0xff303C55),
+                color: const Color(0xff303C55),
               ),
             ],
           ),
@@ -55,7 +57,7 @@ class _WorkState extends State<Work> {
             children: [
               Expanded(
                 flex: 1,
-                child: Container(
+                child: SizedBox(
                     height: size.height * 0.5,
                     //color: Colors.indigo,
                     child: Stack(
@@ -94,9 +96,9 @@ class _WorkState extends State<Work> {
               ),
               Expanded(
                   flex: 6,
-                  child: Container(
+                  child: SizedBox(
                     height: size.height * 0.5,
-                    child: WorkBox(),
+                    child: const WorkBox(),
                   ))
             ],
           )

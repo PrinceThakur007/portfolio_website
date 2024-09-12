@@ -9,6 +9,8 @@ import 'package:scroll_to_index/scroll_to_index.dart';
 
 
 class HomePage extends StatefulWidget {
+  const HomePage({super.key});
+
   @override
   _HomePageState createState() => _HomePageState();
 }
@@ -70,15 +72,15 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
     return Scaffold(
-        backgroundColor: Color(0xff0A192F),
+        backgroundColor: const Color(0xff0A192F),
         body: SingleChildScrollView(
-          physics: ScrollPhysics(),
+          physics: const ScrollPhysics(),
           primary: true,
           scrollDirection: Axis.vertical,
           child: Column(
             children: [
               //Mavigation Bar
-              Container(
+              SizedBox(
                 height: size.height * 0.14,
                 width: size.width,
                 child: Padding(
@@ -94,7 +96,7 @@ class _HomePageState extends State<HomePage> {
                           child: CustomText(
                             text: "PT",
                             textsize: 20.0,
-                            color: Color(0xff41FBDA),
+                            color: const Color(0xff41FBDA),
                             letterSpacing: 3.0,
                             fontWeight: FontWeight.bold,
                           ),
@@ -107,7 +109,7 @@ class _HomePageState extends State<HomePage> {
                       //       color: Color(0xff64FFDA),
                       //     ),
                       //     onPressed: () {}),
-                      Spacer(),
+                      const Spacer(),
                       Expanded(
                         child: Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 8.0),
@@ -118,7 +120,7 @@ class _HomePageState extends State<HomePage> {
                               onTap: (index) async {
                                 _scrollToIndex(index);
                               },
-                              tabs: [
+                              tabs: const [
                                 Tab(
                                   child: AppBarTitle(
                                     text: 'About',
@@ -144,7 +146,7 @@ class _HomePageState extends State<HomePage> {
                           method.launchURL(
                               "https://drive.google.com/file/d/1Rj_rmTI6B1FQFoGiEP4zvafVlQBhlBDN/view");
                         },
-                        hoverColor: Color(0xff64FFDA).withOpacity(0.2),
+                        hoverColor: const Color(0xff64FFDA).withOpacity(0.2),
                         borderRadius: BorderRadius.circular(4.0),
                         child: Container(
                           alignment: Alignment.center,
@@ -152,11 +154,11 @@ class _HomePageState extends State<HomePage> {
                           width: size.width * 0.14,
                           decoration: BoxDecoration(
                             border: Border.all(
-                              color: Color(0xff64FFDA),
+                              color: const Color(0xff64FFDA),
                             ),
                             borderRadius: BorderRadius.circular(4.0),
                           ),
-                          child: Text(
+                          child: const Text(
                             "Resume",
                             style: TextStyle(
                               color: Color(0xff64FFDA),
@@ -214,30 +216,30 @@ class _HomePageState extends State<HomePage> {
               Row(
                 children: [
                   //Social Icon
-                  Container(
+                  SizedBox(
                     width: size.width * 0.09,
                     height: size.height - 82,
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
                         IconButton(
-                            icon: FaIcon(FontAwesomeIcons.github),
-                            color: Color(0xffffA8B2D1),
+                            icon: const FaIcon(FontAwesomeIcons.github),
+                            color: const Color(0xffffa8b2d1),
                             iconSize: 16.0,
                             onPressed: () {
                               method
                                   .launchURL("https://github.com/PrinceThakur007");
                             }),
                         IconButton(
-                            icon: FaIcon(FontAwesomeIcons.twitter),
-                            color: Color(0xffffA8B2D1),
+                            icon: const FaIcon(FontAwesomeIcons.twitter),
+                            color: const Color(0xffffa8b2d1),
                             iconSize: 16.0,
                             onPressed: () {
                               method.launchURL("https://x.com/007thakurprince");
                             }),
                         IconButton(
-                          icon: FaIcon(FontAwesomeIcons.linkedin),
-                          color: Color(0xffffA8B2D1),
+                          icon: const FaIcon(FontAwesomeIcons.linkedin),
+                          color: const Color(0xffffa8b2d1),
                           onPressed: () {
                             method.launchURL(
                                 "https://www.linkedin.com/in/princethakur007/");
@@ -245,15 +247,15 @@ class _HomePageState extends State<HomePage> {
                           iconSize: 16.0,
                         ),
                         IconButton(
-                            icon: Icon(Icons.call),
-                            color: Color(0xffffA8B2D1),
+                            icon: const Icon(Icons.call),
+                            color: const Color(0xffffa8b2d1),
                             iconSize: 16.0,
                             onPressed: () {
                               method.launchCaller();
                             }),
                         IconButton(
-                            icon: Icon(Icons.mail),
-                            color: Color(0xffffA8B2D1),
+                            icon: const Icon(Icons.mail),
+                            color: const Color(0xffffa8b2d1),
                             iconSize: 16.0,
                             onPressed: () {
                               method.launchEmail();
@@ -270,7 +272,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                   Expanded(
-                    child: Container(
+                    child: SizedBox(
                       height: size.height - 82,
                       child: Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 16.0),
@@ -288,26 +290,26 @@ class _HomePageState extends State<HomePage> {
                                   CustomText(
                                     text: "Hi, my name is",
                                     textsize: 16.0,
-                                    color: Color(0xff41FBDA),
+                                    color: const Color(0xff41FBDA),
                                     letterSpacing: 3.0,
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 6.0,
                                   ),
                                   CustomText(
                                     text: "Prince Thakur.",
                                     textsize: 68.0,
-                                    color: Color(0xffCCD6F6),
+                                    color: const Color(0xffCCD6F6),
                                     fontWeight: FontWeight.w900,
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 4.0,
                                   ),
                                   CustomTypeWriterText(
                                     text:
                                         "I design and develop apps with Flutter.",
                                     textsize: 56.0,
-                                    color: Color(0xffCCD6F6).withOpacity(0.6),
+                                    color: const Color(0xffCCD6F6).withOpacity(0.6),
                                     fontWeight: FontWeight.w700,
                                   ),
                                   SizedBox(
@@ -336,7 +338,7 @@ class _HomePageState extends State<HomePage> {
                                       method.launchEmail();
                                     },
                                     hoverColor:
-                                        Color(0xff64FFDA).withOpacity(0.2),
+                                        const Color(0xff64FFDA).withOpacity(0.2),
                                     borderRadius: BorderRadius.circular(4.0),
                                     child: Container(
                                       alignment: Alignment.center,
@@ -344,7 +346,7 @@ class _HomePageState extends State<HomePage> {
                                       width: size.width * 0.14,
                                       decoration: BoxDecoration(
                                         border: Border.all(
-                                          color: Color(0xff64FFDA),
+                                          color: const Color(0xff64FFDA),
                                         ),
                                         borderRadius:
                                             BorderRadius.circular(4.0),
@@ -370,14 +372,14 @@ class _HomePageState extends State<HomePage> {
                               //About Me
                               _wrapScrollTag(
                                 index: 0,
-                                child: About(),
+                                child: const About(),
                               ),
                               SizedBox(
                                 height: size.height * 0.02,
                               ),
 
                               //Where I've Worked
-                              _wrapScrollTag(index: 1, child: Work()),
+                              _wrapScrollTag(index: 1, child: const Work()),
                               SizedBox(
                                 height: size.height * 0.01,
                               ),
@@ -392,7 +394,7 @@ class _HomePageState extends State<HomePage> {
                                 index: 3,
                                 child: Column(
                                   children: [
-                                    Container(
+                                    SizedBox(
                                       height: size.height * 0.68,
                                       width: MediaQuery.of(context).size.width -
                                           100,
@@ -404,10 +406,10 @@ class _HomePageState extends State<HomePage> {
                                           CustomText(
                                             text: "03. What's Next?",
                                             textsize: 16.0,
-                                            color: Color(0xff41FBDA),
+                                            color: const Color(0xff41FBDA),
                                             letterSpacing: 3.0,
                                           ),
-                                          SizedBox(
+                                          const SizedBox(
                                             height: 16.0,
                                           ),
                                           CustomText(
@@ -417,7 +419,7 @@ class _HomePageState extends State<HomePage> {
                                             letterSpacing: 3.0,
                                             fontWeight: FontWeight.w700,
                                           ),
-                                          SizedBox(
+                                          const SizedBox(
                                             height: 14.0,
                                           ),
                                           Wrap(
@@ -434,7 +436,7 @@ class _HomePageState extends State<HomePage> {
                                               ),
                                             ],
                                           ),
-                                          SizedBox(
+                                          const SizedBox(
                                             height: 32.0,
                                           ),
                                           InkWell(
@@ -443,24 +445,24 @@ class _HomePageState extends State<HomePage> {
                                             },
                                             child: Card(
                                               elevation: 4.0,
-                                              color: Color(0xff64FFDA),
+                                              color: const Color(0xff64FFDA),
                                               shape: RoundedRectangleBorder(
                                                 borderRadius:
                                                     BorderRadius.circular(6.0),
                                               ),
                                               child: Container(
-                                                margin: EdgeInsets.all(0.85),
+                                                margin: const EdgeInsets.all(0.85),
                                                 height: size.height * 0.09,
                                                 width: size.width * 0.10,
                                                 alignment: Alignment.center,
                                                 decoration: BoxDecoration(
-                                                  color: Color(0xff0A192F),
+                                                  color: const Color(0xff0A192F),
                                                   borderRadius:
                                                       BorderRadius.circular(
                                                           6.0),
                                                 ),
-                                                child: Padding(
-                                                  padding: const EdgeInsets
+                                                child: const Padding(
+                                                  padding: EdgeInsets
                                                       .symmetric(
                                                     horizontal: 8.0,
                                                   ),
@@ -488,7 +490,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                   ),
-                  Container(
+                  SizedBox(
                     width: MediaQuery.of(context).size.width * 0.07,
                     height: MediaQuery.of(context).size.height - 82,
                     //color: Colors.orange,

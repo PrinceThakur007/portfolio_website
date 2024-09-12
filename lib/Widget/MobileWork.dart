@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import 'Workbox.dart';
 
 class MobileWork extends StatefulWidget {
+  const MobileWork({super.key});
+
   @override
   _MobileWorkState createState() => _MobileWorkState();
 }
@@ -26,10 +27,10 @@ class _MobileWorkState extends State<MobileWork> {
             children: [
               Expanded(
                 flex: 1,
-                child: Container(
+                child: SizedBox(
                     height: size.height * 2.05,
                     //color: Colors.indigo,
-                    child: Stack(
+                    child: const Stack(
                       children: [
                         Center(
                           child: VerticalDivider(
@@ -104,9 +105,9 @@ class _MobileWorkState extends State<MobileWork> {
               ),
               Expanded(
                 flex: 4,
-                child: Container(
+                child: SizedBox(
                   height: size.height * 2.1,
-                  child: WorkBox(
+                  child: const WorkBox(
                     titleSize: 17,
                     subTitleSize: 13,
                     durationSize: 10,

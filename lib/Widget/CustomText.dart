@@ -9,7 +9,7 @@ class CustomText extends StatelessWidget {
   FontWeight? fontWeight;
 
   CustomText(
-      {required this.text,
+      {super.key, required this.text,
       required this.textsize,
       required this.color,
       this.letterSpacing,
@@ -23,8 +23,8 @@ class CustomText extends StatelessWidget {
       style: TextStyle(
           color: color,
           fontSize: textsize,
-          letterSpacing: letterSpacing == null ? 0.10 : letterSpacing,
-          fontWeight: fontWeight == null ? FontWeight.w400 : fontWeight),
+          letterSpacing: letterSpacing ?? 0.10,
+          fontWeight: fontWeight ?? FontWeight.w400),
     );
   }
 }
@@ -37,7 +37,7 @@ class CustomTypeWriterText extends StatelessWidget {
   FontWeight? fontWeight;
 
   CustomTypeWriterText(
-      {required this.text,
+      {super.key, required this.text,
       required this.textsize,
       required this.color,
       this.letterSpacing,
@@ -51,8 +51,8 @@ class CustomTypeWriterText extends StatelessWidget {
       style: TextStyle(
           color: color,
           fontSize: textsize,
-          letterSpacing: letterSpacing == null ? 0.10 : letterSpacing,
-          fontWeight: fontWeight == null ? FontWeight.w400 : fontWeight),
+          letterSpacing: letterSpacing ?? 0.10,
+          fontWeight: fontWeight ?? FontWeight.w400),
     );
   }
 }

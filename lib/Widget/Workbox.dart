@@ -5,11 +5,10 @@ class WorkBox extends StatelessWidget {
   final double titleSize, subTitleSize, durationSize;
 
   const WorkBox(
-      {Key? key,
+      {super.key,
       this.titleSize = 22,
       this.subTitleSize = 13,
-      this.durationSize = 12})
-      : super(key: key);
+      this.durationSize = 12});
 
   @override
   Widget build(BuildContext context) {

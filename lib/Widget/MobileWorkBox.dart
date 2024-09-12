@@ -2,9 +2,11 @@ import 'package:dev_protfolio/Widget/work_custom_data.dart';
 import 'package:flutter/material.dart';
 
 class MobileWork extends StatelessWidget {
+  const MobileWork({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
       mainAxisAlignment: MainAxisAlignment.spaceAround,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [

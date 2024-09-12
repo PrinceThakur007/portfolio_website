@@ -7,14 +7,14 @@ class WorkCustomData extends StatelessWidget {
   final double titleSize, subTitleSize, durationSize;
 
   const WorkCustomData({
-    Key? key,
+    super.key,
     required this.title,
     required this.subTitle,
     required this.duration,
     this.titleSize = 22,
     this.subTitleSize = 13,
     this.durationSize = 12,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -26,29 +26,29 @@ class WorkCustomData extends StatelessWidget {
           title,
           style: TextStyle(
             fontSize: titleSize,
-            color: Color(0xffCCD6F6),
+            color: const Color(0xffCCD6F6),
             fontWeight: FontWeight.w700,
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 6.0,
         ),
         Text(
           subTitle,
           style: TextStyle(
             fontSize: subTitleSize,
-            color: Color(0xffCCD6F6).withOpacity(0.5),
+            color: const Color(0xffCCD6F6).withOpacity(0.5),
             fontWeight: FontWeight.w600,
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 10.0,
         ),
         Text(
           duration,
           style: TextStyle(
             fontSize: durationSize,
-            color: Color(0xffCCD6F6).withOpacity(0.5),
+            color: const Color(0xffCCD6F6).withOpacity(0.5),
             fontWeight: FontWeight.w700,
           ),
         ),

@@ -5,16 +5,18 @@ import 'UI/Home.dart';
 
 void main() {
   setPathUrlStrategy();
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Prince Thakur',
       debugShowCheckedModeBanner: false,
-      home: Home(),
+      home: const Home(),
       theme: ThemeData(
         splashColor: Colors.transparent,
         highlightColor: Colors.transparent,

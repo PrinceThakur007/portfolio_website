@@ -3,6 +3,8 @@ import 'package:dev_protfolio/UI/MobileHome.dart';
 import 'package:flutter/widgets.dart';
 
 class Home extends StatefulWidget {
+  const Home({super.key});
+
   @override
   _HomeState createState() => _HomeState();
 }
@@ -13,9 +15,9 @@ class _HomeState extends State<Home> {
     return LayoutBuilder(
       builder: (context, constraints) {
         if (constraints.maxWidth >= 1000) {
-          return HomePage();
+          return const HomePage();
         } else {
-          return MobileHome();
+          return const MobileHome();
         }
       },
     );

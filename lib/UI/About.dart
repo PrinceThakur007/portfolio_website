@@ -3,12 +3,14 @@ import 'package:flutter/material.dart';
 import '../Widget/CustomText.dart';
 
 class About extends StatelessWidget {
+  const About({super.key});
+
   Widget technology(BuildContext context, String text) {
     return Row(
       children: [
         Icon(
           Icons.skip_next,
-          color: Color(0xff64FFDA).withOpacity(0.6),
+          color: const Color(0xff64FFDA).withOpacity(0.6),
           size: 14.0,
         ),
         SizedBox(
@@ -28,13 +30,13 @@ class About extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
-    return Container(
+    return SizedBox(
       height: size.height,
       width: size.width - 100,
       child: Row(
         children: [
           //About me
-          Container(
+          SizedBox(
             height: size.height * 0.9,
             width: size.width / 2 - 100,
             child: Column(
@@ -46,7 +48,7 @@ class About extends StatelessWidget {
                     CustomText(
                       text: "01.",
                       textsize: 20.0,
-                      color: Color(0xffE7A339),
+                      color: const Color(0xffE7A339),
                       fontWeight: FontWeight.w700,
                     ),
                     const SizedBox(
@@ -55,7 +57,7 @@ class About extends StatelessWidget {
                     CustomText(
                       text: "About Me",
                       textsize: 26.0,
-                      color: Color(0xffCCD6F6),
+                      color: const Color(0xffCCD6F6),
                       fontWeight: FontWeight.w700,
                     ),
                     SizedBox(
@@ -64,7 +66,7 @@ class About extends StatelessWidget {
                     Container(
                       width: size.width / 4.3,
                       height: 1.10,
-                      color: Color(0xff303C55),
+                      color: const Color(0xff303C55),
                     ),
                   ],
                 ),
@@ -80,26 +82,26 @@ class About extends StatelessWidget {
                       text:
                           "Hello! I'm Prince, a Flutter Developer based in United States, .\n\nI enjoy creating things that solve real-world problems, may it be using applications, websites, or anything in between. My goal is to build solutions by leveraging the power of cross-platform development.\n\n",
                       textsize: 16.0,
-                      color: Color(0xff828DAA),
+                      color: const Color(0xff828DAA),
                       letterSpacing: 0.75,
                     ),
                     CustomText(
                       text:
                           "Here are a few technologies I've been working with recently:\n\n",
                       textsize: 16.0,
-                      color: Color(0xff828DAA),
+                      color: const Color(0xff828DAA),
                       // fontWeight: FontWeight.w500,
                       letterSpacing: 0.75,
                     ),
                   ],
                 ),
 
-                Container(
+                SizedBox(
                   height: size.height * 0.15,
                   width: size.width,
                   child: Wrap(
                     children: [
-                      Container(
+                      SizedBox(
                         width: size.width * 0.20,
                         height: size.height * 0.15,
                         child: Column(
@@ -110,7 +112,7 @@ class About extends StatelessWidget {
                           ],
                         ),
                       ),
-                      Container(
+                      SizedBox(
                         width: size.width * 0.15,
                         height: size.height * 0.15,
                         child: Column(
@@ -130,7 +132,7 @@ class About extends StatelessWidget {
 
           //Profile Image
           Expanded(
-            child: Container(
+            child: SizedBox(
               height: size.height / 1.5,
               width: size.width / 2 - 100,
               // color: Colors.white,
@@ -141,16 +143,16 @@ class About extends StatelessWidget {
                     top: size.height * 0.12,
                     left: size.width * 0.120,
                     child: Card(
-                      color: Color(0xff61F9D5),
+                      color: const Color(0xff61F9D5),
                       child: Container(
-                        margin: EdgeInsets.all(2.75),
+                        margin: const EdgeInsets.all(2.75),
                         height: size.height / 2,
                         width: size.width / 5,
-                        color: Color(0xff0A192F),
+                        color: const Color(0xff0A192F),
                       ),
                     ),
                   ),
-                  CustomImageAnimation()
+                  const CustomImageAnimation()
                 ],
               ),
             ),
@@ -162,14 +164,14 @@ class About extends StatelessWidget {
 }
 
 class CustomImageAnimation extends StatefulWidget {
-  CustomImageAnimation({Key? key}) : super(key: key);
+  const CustomImageAnimation({super.key});
 
   @override
   _CustomImageAnimationState createState() => _CustomImageAnimationState();
 }
 
 class _CustomImageAnimationState extends State<CustomImageAnimation> {
-  Color customImageColor = Color(0xff61F9D5).withOpacity(0.5);
+  Color customImageColor = const Color(0xff61F9D5).withOpacity(0.5);
 
   // ignore: unused_field
   int _enterCounter = 0;
@@ -187,7 +189,7 @@ class _CustomImageAnimationState extends State<CustomImageAnimation> {
 
   void _incrementExit(PointerEvent details) {
     setState(() {
-      customImageColor = Color(0xff61F9D5).withOpacity(0.5);
+      customImageColor = const Color(0xff61F9D5).withOpacity(0.5);
       _exitCounter++;
     });
   }
@@ -213,7 +215,7 @@ class _CustomImageAnimationState extends State<CustomImageAnimation> {
             height: size.height / 2,
             width: size.width / 5,
             color: Colors.black54,
-            child: Image(
+            child: const Image(
               fit: BoxFit.cover,
               image: AssetImage("images/prince_profile_image.JPG"),
             ),
