@@ -38,8 +38,10 @@ class _MobileHomeState extends State<MobileHome> {
   }
 
   final ScrollController _controller = ScrollController();
+
   void _scrollToIndex(int index) {
-    final contentSize = _controller.position.viewportDimension + _controller.position.maxScrollExtent;
+    final contentSize = _controller.position.viewportDimension +
+        _controller.position.maxScrollExtent;
     final target = contentSize * index / 4;
     _controller.position.animateTo(
       target,
@@ -320,7 +322,8 @@ class _MobileHomeState extends State<MobileHome> {
                           letterSpacing: 0.75,
                         ),
                         CustomText(
-                          text: "Here are a few technologies I've been working with recently:\n\n",
+                          text:
+                              "Here are a few technologies I've been working with recently:\n\n",
                           textsize: 16.0,
                           color: const Color(0xff828DAA),
                           fontWeight: FontWeight.w500,
@@ -550,7 +553,8 @@ class _MobileHomeState extends State<MobileHome> {
                     size: 15.0,
                   ),
                   onPressed: () {
-                    method.launchURL("https://www.linkedin.com/in/princethakur007/");
+                    method.launchURL(
+                        "https://www.linkedin.com/in/princethakur007/");
                   },
                 ),
                 IconButton(

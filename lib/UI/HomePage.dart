@@ -7,7 +7,6 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
 
-
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
@@ -227,8 +226,8 @@ class _HomePageState extends State<HomePage> {
                             color: const Color(0xffffa8b2d1),
                             iconSize: 16.0,
                             onPressed: () {
-                              method
-                                  .launchURL("https://github.com/PrinceThakur007");
+                              method.launchURL(
+                                  "https://github.com/PrinceThakur007");
                             }),
                         IconButton(
                             icon: const FaIcon(FontAwesomeIcons.twitter),
@@ -309,7 +308,8 @@ class _HomePageState extends State<HomePage> {
                                     text:
                                         "I design and develop apps with Flutter.",
                                     textsize: 56.0,
-                                    color: const Color(0xffCCD6F6).withOpacity(0.6),
+                                    color: const Color(0xffCCD6F6)
+                                        .withOpacity(0.6),
                                     fontWeight: FontWeight.w700,
                                   ),
                                   SizedBox(
@@ -337,8 +337,8 @@ class _HomePageState extends State<HomePage> {
                                     onTap: () {
                                       method.launchEmail();
                                     },
-                                    hoverColor:
-                                        const Color(0xff64FFDA).withOpacity(0.2),
+                                    hoverColor: const Color(0xff64FFDA)
+                                        .withOpacity(0.2),
                                     borderRadius: BorderRadius.circular(4.0),
                                     child: Container(
                                       alignment: Alignment.center,
@@ -451,19 +451,20 @@ class _HomePageState extends State<HomePage> {
                                                     BorderRadius.circular(6.0),
                                               ),
                                               child: Container(
-                                                margin: const EdgeInsets.all(0.85),
+                                                margin:
+                                                    const EdgeInsets.all(0.85),
                                                 height: size.height * 0.09,
                                                 width: size.width * 0.10,
                                                 alignment: Alignment.center,
                                                 decoration: BoxDecoration(
-                                                  color: const Color(0xff0A192F),
+                                                  color:
+                                                      const Color(0xff0A192F),
                                                   borderRadius:
                                                       BorderRadius.circular(
                                                           6.0),
                                                 ),
                                                 child: const Padding(
-                                                  padding: EdgeInsets
-                                                      .symmetric(
+                                                  padding: EdgeInsets.symmetric(
                                                     horizontal: 8.0,
                                                   ),
                                                   child: Text(

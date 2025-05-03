@@ -20,29 +20,37 @@ class WorkBox extends StatelessWidget {
           titleSize: titleSize,
           subTitleSize: subTitleSize,
           durationSize: durationSize,
-          title: "Software Developer",
+          title: "Software Engineer",
           subTitle:
-              "I am currently working as a Software Developer at Sequoia Applied Technologies",
-          duration: "October 2022 - Present",
+              "I am currently working as a Software Engineer at Savana inc",
+          duration: "April 2025 - Present",
         ),
         WorkCustomData(
           titleSize: titleSize,
           subTitleSize: subTitleSize,
           durationSize: durationSize,
-          title: "Software Developer",
-          subTitle: "I worked as a Flutter Developer at Netscape Labs ",
+          title: "Software Engineer",
+          subTitle:
+              "I am currently working as a Software Engineer at Sequoia Applied Technologies",
+          duration: "October 2022 - June 2024",
+        ),
+        WorkCustomData(
+          titleSize: titleSize,
+          subTitleSize: subTitleSize,
+          durationSize: durationSize,
+          title: "Software Engineer",
+          subTitle: "I worked as a Flutter Engineer at Netscape Labs ",
           duration: "Dec 2020 - July 2022",
         ),
         WorkCustomData(
           titleSize: titleSize,
           subTitleSize: subTitleSize,
           durationSize: durationSize,
-          title: "Flutter Developer Intern",
+          title: "Flutter Intern",
           subTitle:
-              "I worked as a Flutter Developer Intern at A.P. Moller Maersk",
-          duration: "September 2022 - March 2023",
+              "I worked as a Flutter Engineer Intern at Eduwiave",
+          duration: "Jan 2020 - July 2020",
         ),
-
       ],
     );
   }

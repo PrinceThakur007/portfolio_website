@@ -3,7 +3,6 @@ import 'package:dev_protfolio/Widget/Workbox.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-
 class Work extends StatefulWidget {
   const Work({super.key});
 
@@ -72,21 +71,28 @@ class _WorkState extends State<Work> {
                           ),
                         ),
                         Container(
-                          child: const Center(
+                          child: Center(
                               child: Column(
                             mainAxisAlignment: MainAxisAlignment.spaceAround,
                             children: [
                               CircleAvatar(
                                 backgroundColor: Colors.lightBlue,
-                                child: FaIcon(FontAwesomeIcons.hotel, color: Colors.white),
+                                radius: 20,
+                                child: Image.network(
+                                    "https://media.licdn.com/dms/image/v2/C4D0BAQHtlPrb6LUQCQ/company-logo_200_200/company-logo_200_200/0/1654290606261/savana_inc_logo?e=1751500800&v=beta&t=5HGFEWirHneOO4O1J63NHfNcowSkQTyZX3jdUhoDfZ0"),
+                              ),
+                              CircleAvatar(
+                                backgroundColor: Colors.lightBlue,
+                                child: Image.network(
+                                    "https://media.licdn.com/dms/image/v2/C510BAQGxqFw6rEzzuw/company-logo_200_200/company-logo_200_200/0/1631363607148?e=1751500800&v=beta&t=aXAX6h4wxOehKXEKgX8KwcN_VfJhj7tGUSAOMxbnulQ"),
                               ),
                               CircleAvatar(
                                 backgroundColor: Colors.white,
-                                child: FlutterLogo(),
+                                child: Image.network("https://media.licdn.com/dms/image/v2/D4D0BAQEnZEdY03gUpA/company-logo_200_200/company-logo_200_200/0/1665551822306/netscapelabsinfotechpvtltd_logo?e=1751500800&v=beta&t=X1LJgL5ub5VE4Cuae2T3t5L56ZFCEH28ZgstMIjg650"),
                               ),
                               CircleAvatar(
                                 backgroundColor: Colors.deepPurple,
-                                child: FaIcon(FontAwesomeIcons.dev, color: Colors.white),
+                                child: Image.network("https://media.licdn.com/dms/image/v2/C510BAQHz4EniXaKLBQ/company-logo_200_200/company-logo_200_200/0/1630586577543/eduwaivefoundation_logo?e=1751500800&v=beta&t=nzpvADB4xZw5lNuCGkpu8UlHJESvHYJ0e6-Ty_x162U"),
                               ),
                             ],
                           )),
